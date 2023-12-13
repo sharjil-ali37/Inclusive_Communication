@@ -14,7 +14,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 hands = mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7)
 
-# Updated labels_dict for all 26 letters
+
 labels_dict = {0: 'O', 1: 'V', 2: 'W', 3: 'A', 4: 'B'}
 
 while True:
@@ -62,7 +62,7 @@ while True:
                         cv2.LINE_AA)
 
     cv2.imshow('frame', frame)
-    if cv2.waitKey(1) & 0xFF == 27:  # Press 'Esc' to exit
+    if cv2.waitKey(1) & 0xFF == 27:  
         break
 
 cap.release()
