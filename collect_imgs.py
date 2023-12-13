@@ -26,7 +26,7 @@ for j in range(number_of_classes):
         if key == ord('c'):
             done = True
     
-  
+   #Capturing Images:
     counter = 0
     while counter < dataset_size:
         ret, frame = cap.read()

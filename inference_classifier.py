@@ -62,7 +62,7 @@ while True:
                         cv2.LINE_AA)
 
     cv2.imshow('frame', frame)
-    if cv2.waitKey(1) & 0xFF == 27:  
+    if cv2.waitKey(1) & 0xFF == 27:  # Press 'Esc' to exit
         break
 
 cap.release()
